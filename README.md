@@ -86,8 +86,8 @@ graph TD
 
 ```bash
 # 1. Clone and set up environment
-git clone https://github.com/username/tranqui-quantum.git
-cd tranqui-quantum
+git clone https://github.com/carroyo03/tranqui.git
+cd tranqui
 python -m venv .venv
 source .venv/bin/activate  # or .venv\Scripts\activate on Windows
 
