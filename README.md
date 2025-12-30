@@ -163,8 +163,8 @@ tranqui/
 
 ## 👤 Author & Credits
 
-**[Your Name]**
-*Master in Big Data Science & AI - Universidad de Navarra*
+**Carlos Gustavo Arroyo Lorenzo**
+*Master in Big Data Science & AI - University of Navarra*
 
 This project combines:
 *   Modern Portfolio Theory (Markowitz, 1952)
