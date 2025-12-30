@@ -1,0 +1,1247 @@
+{
+  "config": {
+    "problem_sizes": [
+      4,
+      6
+    ],
+    "qaoa_reps_range": [
+      1,
+      2
+    ],
+    "qaoa_max_iter": 100,
+    "classical_methods": [
+      "ClassicalMethod.BRUTE_FORCE",
+      "ClassicalMethod.GREEDY"
+    ],
+    "n_runs": 2,
+    "risk_aversion_range": [
+      0.3,
+      0.5,
+      0.7
+    ],
+    "random_seed": 42,
+    "output_dir": "results"
+  },
+  "runs": [
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.3,
+      "solver_type": "classical_brute_force",
+      "solver_config": {
+        "method": "brute_force"
+      },
+      "objective_value": -1501.2890237794295,
+      "selection": [
+        "1",
+        "1",
+        "1",
+        "0"
+      ],
+      "execution_time": 0.0002677440643310547,
+      "is_optimal": true,
+      "n_evaluations": 16,
+      "timestamp": "2025-12-24T21:03:29.320872"
+    },
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.3,
+      "solver_type": "classical_brute_force",
+      "solver_config": {
+        "method": "brute_force"
+      },
+      "objective_value": -1501.2890237794295,
+      "selection": [
+        "1",
+        "1",
+        "1",
+        "0"
+      ],
+      "execution_time": 0.00027108192443847656,
+      "is_optimal": true,
+      "n_evaluations": 16,
+      "timestamp": "2025-12-24T21:03:29.302161"
+    },
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.3,
+      "solver_type": "classical_greedy",
+      "solver_config": {
+        "method": "greedy"
+      },
+      "objective_value": -1501.2890237794295,
+      "selection": [
+        "1",
+        "1",
+        "1",
+        "0"
+      ],
+      "execution_time": 8.893013000488281e-05,
+      "is_optimal": false,
+      "n_evaluations": 16,
+      "timestamp": "2025-12-24T21:03:29.348416"
+    },
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.3,
+      "solver_type": "classical_greedy",
+      "solver_config": {
+        "method": "greedy"
+      },
+      "objective_value": -1501.2890237794295,
+      "selection": [
+        "1",
+        "1",
+        "1",
+        "0"
+      ],
+      "execution_time": 9.608268737792969e-05,
+      "is_optimal": false,
+      "n_evaluations": 16,
+      "timestamp": "2025-12-24T21:03:28.437464"
+    },
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.3,
+      "solver_type": "qaoa_reps1",
+      "solver_config": {
+        "reps": 1,
+        "max_iter": 100
+      },
+      "objective_value": -1501.2890237794295,
+      "selection": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "execution_time": 1.9306740760803223,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:03:31.126576"
+    },
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.3,
+      "solver_type": "qaoa_reps1",
+      "solver_config": {
+        "reps": 1,
+        "max_iter": 100
+      },
+      "objective_value": -1501.2890237794295,
+      "selection": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "execution_time": 2.317214250564575,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:03:31.646831"
+    },
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.3,
+      "solver_type": "qaoa_reps2",
+      "solver_config": {
+        "reps": 2,
+        "max_iter": 100
+      },
+      "objective_value": -1501.2890237794295,
+      "selection": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "execution_time": 5.343141078948975,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:03:34.724745"
+    },
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.3,
+      "solver_type": "qaoa_reps2",
+      "solver_config": {
+        "reps": 2,
+        "max_iter": 100
+      },
+      "objective_value": -1501.2890237794295,
+      "selection": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "execution_time": 4.606934070587158,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:03:33.923376"
+    },
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.5,
+      "solver_type": "classical_brute_force",
+      "solver_config": {
+        "method": "brute_force"
+      },
+      "objective_value": -1500.313387402698,
+      "selection": [
+        "1",
+        "1",
+        "1",
+        "0"
+      ],
+      "execution_time": 0.0002448558807373047,
+      "is_optimal": true,
+      "n_evaluations": 16,
+      "timestamp": "2025-12-24T21:03:28.651131"
+    },
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.5,
+      "solver_type": "classical_brute_force",
+      "solver_config": {
+        "method": "brute_force"
+      },
+      "objective_value": -1500.313387402698,
+      "selection": [
+        "1",
+        "1",
+        "1",
+        "0"
+      ],
+      "execution_time": 0.00015425682067871094,
+      "is_optimal": true,
+      "n_evaluations": 16,
+      "timestamp": "2025-12-24T21:03:28.651550"
+    },
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.5,
+      "solver_type": "classical_greedy",
+      "solver_config": {
+        "method": "greedy"
+      },
+      "objective_value": -1500.313387402698,
+      "selection": [
+        "1",
+        "1",
+        "1",
+        "0"
+      ],
+      "execution_time": 0.0030052661895751953,
+      "is_optimal": false,
+      "n_evaluations": 16,
+      "timestamp": "2025-12-24T21:03:28.654765"
+    },
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.5,
+      "solver_type": "classical_greedy",
+      "solver_config": {
+        "method": "greedy"
+      },
+      "objective_value": -1500.313387402698,
+      "selection": [
+        "1",
+        "1",
+        "1",
+        "0"
+      ],
+      "execution_time": 0.00011706352233886719,
+      "is_optimal": false,
+      "n_evaluations": 16,
+      "timestamp": "2025-12-24T21:03:28.655373"
+    },
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.5,
+      "solver_type": "qaoa_reps1",
+      "solver_config": {
+        "reps": 1,
+        "max_iter": 100
+      },
+      "objective_value": -1500.313387402698,
+      "selection": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "execution_time": 1.9370830059051514,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:03:30.594699"
+    },
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.5,
+      "solver_type": "qaoa_reps1",
+      "solver_config": {
+        "reps": 1,
+        "max_iter": 100
+      },
+      "objective_value": -1500.313387402698,
+      "selection": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "execution_time": 1.4683640003204346,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:03:31.255710"
+    },
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.5,
+      "solver_type": "qaoa_reps2",
+      "solver_config": {
+        "reps": 2,
+        "max_iter": 100
+      },
+      "objective_value": -1500.313387402698,
+      "selection": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "execution_time": 5.0158820152282715,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:03:34.789869"
+    },
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.5,
+      "solver_type": "qaoa_reps2",
+      "solver_config": {
+        "reps": 2,
+        "max_iter": 100
+      },
+      "objective_value": -1500.313387402698,
+      "selection": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "execution_time": 5.201587915420532,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:03:35.010696"
+    },
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.7,
+      "solver_type": "classical_brute_force",
+      "solver_config": {
+        "method": "brute_force"
+      },
+      "objective_value": -1499.9011464800494,
+      "selection": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "execution_time": 0.00021910667419433594,
+      "is_optimal": true,
+      "n_evaluations": 16,
+      "timestamp": "2025-12-24T21:03:30.595488"
+    },
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.7,
+      "solver_type": "classical_brute_force",
+      "solver_config": {
+        "method": "brute_force"
+      },
+      "objective_value": -1499.9011464800494,
+      "selection": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "execution_time": 0.0001659393310546875,
+      "is_optimal": true,
+      "n_evaluations": 16,
+      "timestamp": "2025-12-24T21:03:30.595917"
+    },
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.7,
+      "solver_type": "classical_greedy",
+      "solver_config": {
+        "method": "greedy"
+      },
+      "objective_value": -1499.9011464800494,
+      "selection": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "execution_time": 5.125999450683594e-05,
+      "is_optimal": false,
+      "n_evaluations": 12,
+      "timestamp": "2025-12-24T21:03:30.596181"
+    },
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.7,
+      "solver_type": "classical_greedy",
+      "solver_config": {
+        "method": "greedy"
+      },
+      "objective_value": -1499.9011464800494,
+      "selection": [
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      "execution_time": 4.696846008300781e-05,
+      "is_optimal": false,
+      "n_evaluations": 12,
+      "timestamp": "2025-12-24T21:03:30.596405"
+    },
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.7,
+      "solver_type": "qaoa_reps1",
+      "solver_config": {
+        "reps": 1,
+        "max_iter": 100
+      },
+      "objective_value": -1499.9011464800494,
+      "selection": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "execution_time": 1.84861421585083,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:03:32.445519"
+    },
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.7,
+      "solver_type": "qaoa_reps1",
+      "solver_config": {
+        "reps": 1,
+        "max_iter": 100
+      },
+      "objective_value": -1499.9011464800494,
+      "selection": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "execution_time": 1.8166289329528809,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:03:33.073407"
+    },
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.7,
+      "solver_type": "qaoa_reps2",
+      "solver_config": {
+        "reps": 2,
+        "max_iter": 100
+      },
+      "objective_value": -1499.9011464800494,
+      "selection": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "execution_time": 4.263299942016602,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:03:35.576014"
+    },
+    {
+      "problem_size": 4,
+      "risk_aversion": 0.7,
+      "solver_type": "qaoa_reps2",
+      "solver_config": {
+        "reps": 2,
+        "max_iter": 100
+      },
+      "objective_value": -1499.9011464800494,
+      "selection": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "execution_time": 4.1596150398254395,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:03:35.944060"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.3,
+      "solver_type": "classical_brute_force",
+      "solver_config": {
+        "method": "brute_force"
+      },
+      "objective_value": -1001.6259844810835,
+      "selection": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1"
+      ],
+      "execution_time": 0.0004608631134033203,
+      "is_optimal": true,
+      "n_evaluations": 64,
+      "timestamp": "2025-12-24T21:03:32.446635"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.3,
+      "solver_type": "classical_brute_force",
+      "solver_config": {
+        "method": "brute_force"
+      },
+      "objective_value": -1001.6259844810835,
+      "selection": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1"
+      ],
+      "execution_time": 0.0004038810729980469,
+      "is_optimal": true,
+      "n_evaluations": 64,
+      "timestamp": "2025-12-24T21:03:32.447277"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.3,
+      "solver_type": "classical_greedy",
+      "solver_config": {
+        "method": "greedy"
+      },
+      "objective_value": -1001.6259844810835,
+      "selection": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1"
+      ],
+      "execution_time": 8.797645568847656e-05,
+      "is_optimal": false,
+      "n_evaluations": 24,
+      "timestamp": "2025-12-24T21:03:32.447561"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.3,
+      "solver_type": "classical_greedy",
+      "solver_config": {
+        "method": "greedy"
+      },
+      "objective_value": -1001.6259844810835,
+      "selection": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1"
+      ],
+      "execution_time": 8.487701416015625e-05,
+      "is_optimal": false,
+      "n_evaluations": 24,
+      "timestamp": "2025-12-24T21:03:32.447818"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.3,
+      "solver_type": "qaoa_reps1",
+      "solver_config": {
+        "reps": 1,
+        "max_iter": 100
+      },
+      "objective_value": -1001.6259844810835,
+      "selection": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "execution_time": 6.339954853057861,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:03:38.788333"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.3,
+      "solver_type": "qaoa_reps1",
+      "solver_config": {
+        "reps": 1,
+        "max_iter": 100
+      },
+      "objective_value": -1001.6259844810835,
+      "selection": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "execution_time": 7.088479042053223,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:03:40.162803"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.3,
+      "solver_type": "qaoa_reps2",
+      "solver_config": {
+        "reps": 2,
+        "max_iter": 100
+      },
+      "objective_value": -1001.6259844810835,
+      "selection": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "execution_time": 22.86905026435852,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:03:57.004360"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.3,
+      "solver_type": "qaoa_reps2",
+      "solver_config": {
+        "reps": 2,
+        "max_iter": 100
+      },
+      "objective_value": -1001.6259844810835,
+      "selection": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "execution_time": 23.911230087280273,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:03:58.702293"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.5,
+      "solver_type": "classical_brute_force",
+      "solver_config": {
+        "method": "brute_force"
+      },
+      "objective_value": -1000.4477428572396,
+      "selection": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      "execution_time": 0.00044608116149902344,
+      "is_optimal": true,
+      "n_evaluations": 64,
+      "timestamp": "2025-12-24T21:03:34.826733"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.5,
+      "solver_type": "classical_brute_force",
+      "solver_config": {
+        "method": "brute_force"
+      },
+      "objective_value": -1000.4477428572396,
+      "selection": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      "execution_time": 0.0003681182861328125,
+      "is_optimal": true,
+      "n_evaluations": 64,
+      "timestamp": "2025-12-24T21:03:34.827371"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.5,
+      "solver_type": "classical_greedy",
+      "solver_config": {
+        "method": "greedy"
+      },
+      "objective_value": -1000.4477428572396,
+      "selection": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      "execution_time": 6.723403930664062e-05,
+      "is_optimal": false,
+      "n_evaluations": 18,
+      "timestamp": "2025-12-24T21:03:34.827627"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.5,
+      "solver_type": "classical_greedy",
+      "solver_config": {
+        "method": "greedy"
+      },
+      "objective_value": -1000.4477428572396,
+      "selection": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      "execution_time": 6.198883056640625e-05,
+      "is_optimal": false,
+      "n_evaluations": 18,
+      "timestamp": "2025-12-24T21:03:34.827856"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.5,
+      "solver_type": "qaoa_reps1",
+      "solver_config": {
+        "reps": 1,
+        "max_iter": 100
+      },
+      "objective_value": -1000.4477428572395,
+      "selection": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "execution_time": 7.333758115768433,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:03:42.162211"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.5,
+      "solver_type": "qaoa_reps1",
+      "solver_config": {
+        "reps": 1,
+        "max_iter": 100
+      },
+      "objective_value": -1000.435998523174,
+      "selection": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "execution_time": 6.973057985305786,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:03:41.984862"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.5,
+      "solver_type": "qaoa_reps2",
+      "solver_config": {
+        "reps": 2,
+        "max_iter": 100
+      },
+      "objective_value": -1000.4477428572395,
+      "selection": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "execution_time": 23.090553045272827,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:03:58.667726"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.5,
+      "solver_type": "qaoa_reps2",
+      "solver_config": {
+        "reps": 2,
+        "max_iter": 100
+      },
+      "objective_value": -1000.1915823160441,
+      "selection": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "execution_time": 22.81555700302124,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:03:58.760709"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.7,
+      "solver_type": "classical_brute_force",
+      "solver_config": {
+        "method": "brute_force"
+      },
+      "objective_value": -999.8526935284203,
+      "selection": [
+        "0",
+        "1",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      "execution_time": 0.00048804283142089844,
+      "is_optimal": true,
+      "n_evaluations": 64,
+      "timestamp": "2025-12-24T21:03:38.789430"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.7,
+      "solver_type": "classical_brute_force",
+      "solver_config": {
+        "method": "brute_force"
+      },
+      "objective_value": -999.8526935284203,
+      "selection": [
+        "0",
+        "1",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      "execution_time": 0.00040602684020996094,
+      "is_optimal": true,
+      "n_evaluations": 64,
+      "timestamp": "2025-12-24T21:03:38.790075"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.7,
+      "solver_type": "classical_greedy",
+      "solver_config": {
+        "method": "greedy"
+      },
+      "objective_value": -999.8526935284203,
+      "selection": [
+        "0",
+        "1",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      "execution_time": 6.890296936035156e-05,
+      "is_optimal": false,
+      "n_evaluations": 18,
+      "timestamp": "2025-12-24T21:03:38.790341"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.7,
+      "solver_type": "classical_greedy",
+      "solver_config": {
+        "method": "greedy"
+      },
+      "objective_value": -999.8526935284203,
+      "selection": [
+        "0",
+        "1",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      "execution_time": 6.699562072753906e-05,
+      "is_optimal": false,
+      "n_evaluations": 18,
+      "timestamp": "2025-12-24T21:03:38.790586"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.7,
+      "solver_type": "qaoa_reps1",
+      "solver_config": {
+        "reps": 1,
+        "max_iter": 100
+      },
+      "objective_value": -999.8526935284203,
+      "selection": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "execution_time": 4.5017290115356445,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:03:43.292926"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.7,
+      "solver_type": "qaoa_reps1",
+      "solver_config": {
+        "reps": 1,
+        "max_iter": 100
+      },
+      "objective_value": -999.8526935284203,
+      "selection": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "execution_time": 6.415611743927002,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:03:46.579551"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.7,
+      "solver_type": "qaoa_reps2",
+      "solver_config": {
+        "reps": 2,
+        "max_iter": 100
+      },
+      "objective_value": -999.8526935284203,
+      "selection": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "execution_time": 19.47636604309082,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:04:01.462312"
+    },
+    {
+      "problem_size": 6,
+      "risk_aversion": 0.7,
+      "solver_type": "qaoa_reps2",
+      "solver_config": {
+        "reps": 2,
+        "max_iter": 100
+      },
+      "objective_value": -999.8526935284203,
+      "selection": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "execution_time": 16.46979522705078,
+      "is_optimal": false,
+      "n_evaluations": 0,
+      "timestamp": "2025-12-24T21:03:58.633130"
+    }
+  ],
+  "summary": {
+    "problem_size": {
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 6,
+      "13": 6,
+      "14": 6,
+      "15": 6,
+      "16": 6,
+      "17": 6,
+      "18": 6,
+      "19": 6,
+      "20": 6,
+      "21": 6,
+      "22": 6,
+      "23": 6
+    },
+    "solver_type": {
+      "0": "classical_brute_force",
+      "1": "classical_brute_force",
+      "2": "classical_brute_force",
+      "3": "classical_greedy",
+      "4": "classical_greedy",
+      "5": "classical_greedy",
+      "6": "qaoa_reps1",
+      "7": "qaoa_reps1",
+      "8": "qaoa_reps1",
+      "9": "qaoa_reps2",
+      "10": "qaoa_reps2",
+      "11": "qaoa_reps2",
+      "12": "classical_brute_force",
+      "13": "classical_brute_force",
+      "14": "classical_brute_force",
+      "15": "classical_greedy",
+      "16": "classical_greedy",
+      "17": "classical_greedy",
+      "18": "qaoa_reps1",
+      "19": "qaoa_reps1",
+      "20": "qaoa_reps1",
+      "21": "qaoa_reps2",
+      "22": "qaoa_reps2",
+      "23": "qaoa_reps2"
+    },
+    "risk_aversion": {
+      "0": 0.3,
+      "1": 0.5,
+      "2": 0.7,
+      "3": 0.3,
+      "4": 0.5,
+      "5": 0.7,
+      "6": 0.3,
+      "7": 0.5,
+      "8": 0.7,
+      "9": 0.3,
+      "10": 0.5,
+      "11": 0.7,
+      "12": 0.3,
+      "13": 0.5,
+      "14": 0.7,
+      "15": 0.3,
+      "16": 0.5,
+      "17": 0.7,
+      "18": 0.3,
+      "19": 0.5,
+      "20": 0.7,
+      "21": 0.3,
+      "22": 0.5,
+      "23": 0.7
+    },
+    "objective_value_mean": {
+      "0": -1501.289024,
+      "1": -1500.313387,
+      "2": -1499.901146,
+      "3": -1501.289024,
+      "4": -1500.313387,
+      "5": -1499.901146,
+      "6": -1501.289024,
+      "7": -1500.313387,
+      "8": -1499.901146,
+      "9": -1501.289024,
+      "10": -1500.313387,
+      "11": -1499.901146,
+      "12": -1001.625984,
+      "13": -1000.447743,
+      "14": -999.852694,
+      "15": -1001.625984,
+      "16": -1000.447743,
+      "17": -999.852694,
+      "18": -1001.625984,
+      "19": -1000.441871,
+      "20": -999.852694,
+      "21": -1001.625984,
+      "22": -1000.319663,
+      "23": -999.852694
+    },
+    "objective_value_std": {
+      "0": 0.0,
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0,
+      "7": 0.0,
+      "8": 0.0,
+      "9": 0.0,
+      "10": 0.0,
+      "11": 0.0,
+      "12": 0.0,
+      "13": 0.0,
+      "14": 0.0,
+      "15": 0.0,
+      "16": 0.0,
+      "17": 0.0,
+      "18": 0.0,
+      "19": 0.008304,
+      "20": 0.0,
+      "21": 0.0,
+      "22": 0.181133,
+      "23": 0.0
+    },
+    "objective_value_min": {
+      "0": -1501.289024,
+      "1": -1500.313387,
+      "2": -1499.901146,
+      "3": -1501.289024,
+      "4": -1500.313387,
+      "5": -1499.901146,
+      "6": -1501.289024,
+      "7": -1500.313387,
+      "8": -1499.901146,
+      "9": -1501.289024,
+      "10": -1500.313387,
+      "11": -1499.901146,
+      "12": -1001.625984,
+      "13": -1000.447743,
+      "14": -999.852694,
+      "15": -1001.625984,
+      "16": -1000.447743,
+      "17": -999.852694,
+      "18": -1001.625984,
+      "19": -1000.447743,
+      "20": -999.852694,
+      "21": -1001.625984,
+      "22": -1000.447743,
+      "23": -999.852694
+    },
+    "execution_time_mean": {
+      "0": 0.000269,
+      "1": 0.0002,
+      "2": 0.000193,
+      "3": 9.3e-05,
+      "4": 0.001561,
+      "5": 4.9e-05,
+      "6": 2.123944,
+      "7": 1.702724,
+      "8": 1.832622,
+      "9": 4.975038,
+      "10": 5.108735,
+      "11": 4.211457,
+      "12": 0.000432,
+      "13": 0.000407,
+      "14": 0.000447,
+      "15": 8.6e-05,
+      "16": 6.5e-05,
+      "17": 6.8e-05,
+      "18": 6.714217,
+      "19": 7.153408,
+      "20": 5.45867,
+      "21": 23.39014,
+      "22": 22.953055,
+      "23": 17.973081
+    },
+    "execution_time_std": {
+      "0": 2e-06,
+      "1": 6.4e-05,
+      "2": 3.8e-05,
+      "3": 5e-06,
+      "4": 0.002042,
+      "5": 3e-06,
+      "6": 0.273325,
+      "7": 0.331434,
+      "8": 0.022617,
+      "9": 0.520577,
+      "10": 0.131314,
+      "11": 0.073316,
+      "12": 4e-05,
+      "13": 5.5e-05,
+      "14": 5.8e-05,
+      "15": 2e-06,
+      "16": 4e-06,
+      "17": 1e-06,
+      "18": 0.529287,
+      "19": 0.255054,
+      "20": 1.353319,
+      "21": 0.736932,
+      "22": 0.194452,
+      "23": 2.125967
+    },
+    "is_optimal_mean": {
+      "0": 1.0,
+      "1": 1.0,
+      "2": 1.0,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0,
+      "7": 0.0,
+      "8": 0.0,
+      "9": 0.0,
+      "10": 0.0,
+      "11": 0.0,
+      "12": 1.0,
+      "13": 1.0,
+      "14": 1.0,
+      "15": 0.0,
+      "16": 0.0,
+      "17": 0.0,
+      "18": 0.0,
+      "19": 0.0,
+      "20": 0.0,
+      "21": 0.0,
+      "22": 0.0,
+      "23": 0.0
+    }
+  }
+}
