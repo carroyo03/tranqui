@@ -53,8 +53,8 @@ graph TD
     end
 
     subgraph "Optimization Engine"
-        Opt --> CLASSICAL[Classical Solvers\n(Brute Force / Greedy)]
-        Opt --> QUANTUM[Quantum Solver\n(Qiskit QAOA)]
+        Opt --> CLASSICAL["Classical Solvers\n(Brute Force / Greedy)"]
+        Opt --> QUANTUM["Quantum Solver\n(Qiskit QAOA)"]
         QUANTUM -.-> |Benchmarking| CLASSICAL
     end
 
