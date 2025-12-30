@@ -1,183 +1,172 @@
-# QuantumCoach: Optimización Cuántica de Carteras para Inversores Retail
+# 🧘 Tranqui (QuantumCoach)
+> **Financial Peace through Quantum Intelligence.**
+>
+> *Un sistema híbrido cuántico-clásico que democratiza la optimización de carteras para la Gen Z.*
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Framework: FastAPI](https://img.shields.io/badge/API-FastAPI-009688.svg)](https://fastapi.tiangolo.com/)
+[![Frontend: Vite+React](https://img.shields.io/badge/Web-Vite%2BReact-646CFF.svg)](https://vitejs.dev/)
 
-## 📋 Descripción
+---
 
-Sistema híbrido cuántico-clásico para optimización de carteras de inversión, diseñado específicamente para inversores retail de la Generación Z en España. Combina el algoritmo QAOA (Quantum Approximate Optimization Algorithm) con explicaciones en lenguaje natural generadas por LLM.
+## 🌗 The Dual Vision (El Doble Enfoque)
 
-### Motivación
+Este proyecto (TFM) aborda el problema de la inversión retail desde dos perspectivas complementarias:
 
-- **Contexto español**: Baja educación financiera (OCDE), salarios estancados, crisis de vivienda
-- **Target**: Generación Z con capital limitado (€50-500/mes) y alta aversión a pérdidas
-- **Objetivo**: Democratizar herramientas de optimización sofisticadas con explicaciones accesibles
+### 1. La Perspectiva Científica (Thesis Core)
+**"Benchmarking de Algoritmos Cuánticos en Finanzas"**
+Un motor de comparación riguroso entre:
+*   **Classical Solvers**: Brute Force (exacto para $N < 20$) y Greedy (aproximado rápido).
+*   **Quantum Solvers**: QAOA (Quantum Approximate Optimization Algorithm) ejecutado en simuladores Qiskit/Aer.
+*   **Objetivo**: Demostrar la viabilidad del "Hybrid Logic" -> Usar clásico hoy, estar preparado para la ventaja cuántica mañana.
 
-## 🏗️ Arquitectura
+### 2. La Perspectiva de Producto (UX/Gen Z)
+**"Tranqui: Tu Coach Financiero Zen"**
+La tecnología cuántica es intimidante; las finanzas también.
+*   **La Solución**: Una interfaz "Dark/Neon Premium" que oculta la complejidad matemática bajo una capa de bienestar financiero.
+*   **El Coach**: Un sistema LLM (LangChain) que traduce "Sharpe Ratios" y "Fronteras Eficientes" a lenguaje natural empático. *"No te preocupes por la volatilidad, tu cartera está blindada matemáticamente."*
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                           DATA LAYER                                     │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐    │
-│  │Yahoo Finance│  │ IBEX 35     │  │ ECB Rates   │  │ INE (CPI)   │    │
-│  └──────┬──────┘  └──────┬──────┘  └──────┬──────┘  └──────┬──────┘    │
-│         └────────────────┴────────────────┴────────────────┘            │
-│                                   │                                      │
-│                          ┌────────▼────────┐                            │
-│                          │   DataEngine    │                            │
-│                          │   (DuckDB)      │                            │
-│                          └────────┬────────┘                            │
-└───────────────────────────────────┼─────────────────────────────────────┘
-                                    │
-┌───────────────────────────────────┼─────────────────────────────────────┐
-│                        OPTIMIZATION LAYER                                │
-│                                   │                                      │
-│         ┌─────────────────────────┼─────────────────────────────┐       │
-│         │                         ▼                             │       │
-│         │               ┌─────────────────┐                     │       │
-│         │               │   QUBOEngine    │                     │       │
-│         │               │   (Markowitz)   │                     │       │
-│         │               └────────┬────────┘                     │       │
-│         │                        │                              │       │
-│         │         ┌──────────────┴──────────────┐               │       │
-│         │         ▼                             ▼               │       │
-│         │  ┌─────────────┐              ┌─────────────┐         │       │
-│         │  │   QAOA      │              │  Classical  │         │       │
-│         │  │  (Qiskit)   │              │   (CVXPY)   │         │       │
-│         │  └──────┬──────┘              └──────┬──────┘         │       │
-│         │         └──────────────┬─────────────┘               │       │
-│         │                        ▼                              │       │
-│         │               ┌─────────────────┐                     │       │
-│         │               │   Comparator    │                     │       │
-│         │               │   (Benchmark)   │                     │       │
-│         │               └────────┬────────┘                     │       │
-│         └────────────────────────┼──────────────────────────────┘       │
-└───────────────────────────────────┼─────────────────────────────────────┘
-                                    │
-┌───────────────────────────────────┼─────────────────────────────────────┐
-│                        EXPLANATION LAYER                                 │
-│                                   ▼                                      │
-│                          ┌─────────────────┐                            │
-│                          │  QuantumCoach   │                            │
-│                          │    (LLM)        │                            │
-│                          └────────┬────────┘                            │
-└───────────────────────────────────┼─────────────────────────────────────┘
-                                    │
-┌───────────────────────────────────┼─────────────────────────────────────┐
-│                        EVALUATION LAYER                                  │
-│                                   ▼                                      │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐    │
-│  │  Backtest   │  │   Metrics   │  │   Survey    │  │  Visualizer │    │
-│  └─────────────┘  └─────────────┘  └─────────────┘  └─────────────┘    │
-└─────────────────────────────────────────────────────────────────────────┘
+---
+
+## 🏗️ Arquitectura del Sistema
+
+El sistema sigue una arquitectura modular estricta para separar la lógica de investigación (Core) de la aplicación de usuario (Web/API).
+
+```mermaid
+graph TD
+    subgraph "Frontend Layer (Vite/React)"
+        UI[Web App UI] --> |HTTP/JSON| API
+        UI --> |Auth| Firebase[Firebase Auth]
+    end
+
+    subgraph "Service Layer (FastAPI)"
+        API[API Gateway] --> Core
+        API --> DB[(DuckDB / Cache)]
+    end
+
+    subgraph "Core Library (src/)"
+        Core --> Data[Data Engine]
+        Core --> Opt[Optimization Engine]
+        Core --> Coach[AI Coach Engine]
+    end
+
+    subgraph "Optimization Engine"
+        Opt --> CLASSICAL[Classical Solvers\n(Brute Force / Greedy)]
+        Opt --> QUANTUM[Quantum Solver\n(Qiskit QAOA)]
+        QUANTUM -.-> |Benchmarking| CLASSICAL
+    end
+
+    subgraph "External Providers"
+        Data --> YFin[Yahoo Finance]
+        Coach --> LLM[OpenAI / LLM API]
+    end
 ```
 
-## 📁 Estructura del Proyecto
+### Componentes Clave
 
-```
-quantum_portfolio_optimizer/
-├── README.md
-├── pyproject.toml
-├── requirements.txt
-├── config/
-│   ├── __init__.py
-│   ├── settings.py          # Configuración centralizada
-│   └── assets.py             # Universo de activos españoles
-├── src/
-│   ├── __init__.py
-│   ├── data/
-│   │   ├── __init__.py
-│   │   ├── data_engine.py    # Pipeline de datos
-│   │   └── spanish_assets.py # Activos específicos España
-│   ├── optimization/
-│   │   ├── __init__.py
-│   │   ├── qubo_engine.py    # Formulación QUBO
-│   │   ├── quantum_solver.py # QAOA (Qiskit)
-│   │   └── classical_solver.py # Baseline clásico
-│   ├── explanation/
-│   │   ├── __init__.py
-│   │   └── coach_engine.py   # LLM explanations
-│   ├── evaluation/
-│   │   ├── __init__.py
-│   │   ├── benchmark.py      # Comparación QAOA vs Clásico
-│   │   ├── metrics.py        # Métricas financieras
-│   │   └── backtest.py       # Backtesting engine
-│   └── visualization/
-│       ├── __init__.py
-│       └── plots.py          # Visualizaciones
-├── tests/
-│   ├── __init__.py
-│   ├── test_qubo.py
-│   ├── test_solvers.py
-│   └── test_metrics.py
-├── notebooks/
-│   └── thesis_experiments.ipynb
-└── main.py                   # Entry point
-```
+| Módulo | Tecnología | Función |
+|--------|------------|---------|
+| **`src.optimization`** | Qiskit, Numpy | El corazón matemático. Transforma problemas de Markowitz en Hamiltonianos (QUBO) para QAOA. |
+| **`src.explanation`** | LangChain | Convierte vectores numéricos de decisión en narrativa financiera personalizada. |
+| **`api/`** | FastAPI | Expone la potencia del Core a través de endpoints REST (`/optimize`, `/chat`, `/benchmark`). |
+| **`web/`** | React + Vite | Dashboard interactivo con estética "Glassmorphism" y visualización de datos en tiempo real. |
 
-## 🚀 Instalación
+---
+
+## 🚀 Quick Start (Para Desarrolladores)
+
+### Prerrequisitos
+- Python 3.10+
+- Node.js 18+ (para el frontend)
+- Clave de API para LLM (OpenRouter/OpenAI)
+
+### 1. Core & Backend (Python)
 
 ```bash
-# Clonar repositorio
-git clone https://github.com/username/quantum-portfolio-optimizer.git
-cd quantum-portfolio-optimizer
+# 1. Clonar y preparar entorno
+git clone https://github.com/username/tranqui-quantum.git
+cd tranqui-quantum
+python -m venv .venv
+source .venv/bin/activate  # o .venv\Scripts\activate en Windows
 
-# Crear entorno virtual
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# venv\Scripts\activate   # Windows
-
-# Instalar dependencias
+# 2. Instalar dependencias
 pip install -r requirements.txt
 
-# Configurar variables de entorno
+# 3. Configuración
 cp .env.example .env
-# Editar .env con tu OPENROUTER_API_KEY
+# [!] Edita .env y añade tus claves API
+
+# 4. Probar el Core (CLI)
+# Ejecuta una optimización rápida de 3 activos españoles
+python main.py --tickers SAN.MC ITX.MC IBE.MC --risk-aversion 0.5 --explain
+
+# 5. Levantar el Servidor API
+./start_app.sh
+# O manualmente: uvicorn api.main:app --reload
 ```
 
-## 💻 Uso
-
-### Ejecución Básica
+### 2. Frontend (React)
 
 ```bash
-python main.py --tickers SAN.MC ITX.MC IBE.MC --risk-aversion 0.5
+cd web
+
+# 1. Instalar dependencias
+npm install
+
+# 2. Iniciar servidor de desarrollo
+npm run dev
+
+# Accede a http://localhost:5173
 ```
 
-### Benchmark Completo
+---
 
+## 🔬 Scientific Validation (Thesis Experiments)
+
+El proyecto incluye un módulo de benchmarking (`src.evaluation.benchmark`) para validar el rendimiento de QAOA frente a métodos clásicos.
+
+**Resultados Preliminares (Simulación):**
+*   **Pequeña Escala ($N=4-8$)**: QAOA alcanza el óptimo global (GAP < 1%) consistente con > p=2 capas.
+*   **Media Escala ($N=12-16$)**: El ruido de simulación y la profundidad del circuito requieren optimizadores clásicos híbridos (COBYLA/SPSA) más robustos.
+*   **Velocidad**: Clásico es órdenes de magnitud más rápido actualmente (milisegundos vs segundos/minutos), justificando el enfoque híbrido de "Tranqui": *Usar Clásico para respuesta real-time, Cuántico para análisis profundo offline.*
+
+Para reproducir los experimentos de la tesis:
 ```bash
-python main.py --benchmark --sizes 4 8 12 16 --output results/
+python main.py --benchmark --sizes 4 8 12 --runs 5 --output thesis_results/
 ```
 
-### Con Explicación LLM
+---
 
-```bash
-python main.py --tickers SAN.MC ITX.MC IBE.MC --explain --language es
+## 📁 Estructura del Repositorio
+
+```text
+tranqui/
+├── api/                 # Capa de Servicio (FastAPI)
+│   ├── routes.py        # Endpoints (Bridge entre Web y Core)
+│   └── models.py        # Pydantic Schemas
+├── src/                 # Core Library (Lógica de Negocio Pura)
+│   ├── data/            # Ingesta de Yahoo Finance + DuckDB
+│   ├── optimization/    # QUBO, Qiskit QAOA, Solvers Clásicos
+│   ├── explanation/     # Generador de texto con LangChain
+│   └── evaluation/      # Métricas Financieras (Sharpe, Volatilidad)
+├── web/                 # Frontend Application
+│   ├── src/             # React Components (Atomic Design)
+│   └── services/        # Conexión con Backend
+├── main.py              # CLI Entrypoint para experimentación
+├── requirements.txt     # Dependencias Python
+└── README.md            # Este archivo
 ```
 
-## 📊 Resultados Experimentales
+---
 
-Ver `notebooks/thesis_experiments.ipynb` para reproducir todos los experimentos.
+## 👤 Autor & Créditos
 
-### Comparación QAOA vs Clásico (n=8 activos)
+**[Tu Nombre]**
+*Master in Big Data Science & AI - Universidad de Navarra*
 
-| Métrica | QAOA (reps=1) | QAOA (reps=2) | Clásico (MILP) |
-|---------|---------------|---------------|----------------|
-| Tiempo (s) | 2.34 | 8.91 | 0.12 |
-| Gap (%) | 3.2% | 0.8% | 0.0% |
-| Sharpe Ratio | 1.23 | 1.28 | 1.31 |
-
-## 📚 Referencias
-
-- Hodson, M., et al. (2019). Portfolio rebalancing experiments using the Quantum Alternating Operator Ansatz.
-- Brandhofer, S., et al. (2022). Benchmarking the performance of portfolio optimization with QAOA.
-- Markowitz, H. (1952). Portfolio Selection. The Journal of Finance.
-
-## 📄 Licencia
-
-MIT License - ver [LICENSE](LICENSE)
-
-## 👤 Autor
-
-[Tu Nombre] - MSc Big Data Science & AI - [Universidad]
+Este proyecto combina:
+*   Teoría Moderna de Carteras (Markowitz, 1952)
+*   Computación Cuántica Variacional (Farhi et al., 2014)
+*   Ingeniería de Software Moderna (Clean Architecture)
